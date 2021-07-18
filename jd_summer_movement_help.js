@@ -15,7 +15,7 @@ const { R_OK } = require('fs').constants;
 const vm = require('vm');
 let smashUtils;
 
-let summer_movement_ShHelpFlag = 1;// 0不开启也不助力 1开启并助力 2开启但不助力
+let summer_movement_ShHelpFlag = 0;// 0不开启也不助力 1开启并助力 2开启但不助力
 if ($.isNode() && process.env.summer_movement_ShHelpFlag) {
   summer_movement_ShHelpFlag = process.env.summer_movement_ShHelpFlag;
 }
